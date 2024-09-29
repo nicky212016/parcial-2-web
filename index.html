@@ -1,13 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Home</title>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React - Parcial 2</title>
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="src\index.css" />
+    <script type="module" src="script.js"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <main>
+      <div class="title">
+        <h1>Nicolás Cortés Restrepo</h1>
+        <h2>Estudiante universitario</h2>
+        <img id="img" src="https://imgur.com/gallery/mera-guaracha-pap-uflOm56" alt="yo" />
+      </div>
+
+      <div class="container">
+        <div class="column left-column">
+          <p>
+            Soy un estudiante universitario altamente motivado, en búsqueda de
+            autonomía y con disposición para el aprendizaje y el desarrollo de
+            nuevas competencias dentro del mundo laboral. Tengo experiencia en
+            la ideación, creación y desarrollo de aplicaciones móviles, así como
+            habilidades destacadas en la comunicación oral y escrita, promoción
+            y venta de productos digitales y el liderazgo de equipos de trabajo.
+            Soy una persona creativa, analítica y orientada a los detalles,
+            capaz de adaptarme rápidamente a entornos cambiantes y trabajar bajo
+            presión. <br />
+            <br />
+            Durante mi bachiller logré adquirir conocimientos sobre cómo
+            identificar una problemática dentro de la sociedad con base a los
+            Objetivos de Desarrollo Sostenible (ODS), para así proponer una
+            posible solución a la misma mediante una aplicación móvil, creada
+            por medio de la programación/codificación de bloques y así venderla
+            como un producto, tanto en inglés como en español.
+          </p>
+          <hr />
+
+          <h2>Educación</h2>
+          <ul>
+            <li>
+              <strong>Bachiller académico: </strong>Colegio Salesiano San Juan
+              Bosco - Tuluá
+            </li>
+            <li><strong>Técnico en Desarrollo de Software: </strong>SENA</li>
+            <li><strong>Curso de Inglés: </strong>UCEVA</li>
+            <li>
+              <strong>Pregrado - Ingeniería Multimedia: </strong>Universidad
+              Autónoma de Occidente <strong>(en curso)</strong>
+            </li>
+          </ul>
+          <hr />
+
+          <h2>Idiomas</h2>
+          <ul>
+            <li><strong>Español:</strong> Nativo</li>
+            <li>
+              <strong>Inglés:</strong> Nivel oral avanzado <br />
+              Nivel escrito avanzado
+            </li>
+          </ul>
+        </div>
+        <div class="divider"></div>
+        <div class="column right-column">
+          <div class="containerSkills">
+            <div class="hardSkills">
+              <h2 id="subtitle"><strong>Habilidades Duras</strong></h2>
+              <ul>
+                <li>Modelado 3D</li>
+                <li>Manejo de Unity</li>
+                <li>Adobe After Effects</li>
+                <li>Adobe Premiere Pro</li>
+                <li>Nivel B2 de Inglés</li>
+                <li>Manejo de Pro Tools</li>
+              </ul>
+            </div>
+
+            <div class="softSkills">
+              <h2 id="subtitle"><strong>Habilidades Blandas</strong></h2>
+              <ul>
+                <li>Creatividad</li>
+                <li>Resiliencia</li>
+                <li>Liderazgo</li>
+                <li>Trabajo en equipo</li>
+                <li>Comunicación asertiva</li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <hr />
+          <h2>Proyectos</h2>
+          <ul>
+            <li>
+              <a
+                class="proyectos"
+                href="https://docs.google.com/document/d/1W7HB9w2-3qDQHqSKpo_Y9A9TUSMqv-kSLtLY3ylAxi4/edit?usp=sharing"
+              >
+                Proceso para eliminar archivos binarios en GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="proyectos"
+                href="https://github.com/nicky212016/Tarea_Cambio_Propiedades.git"
+              >
+                Cambio de propiedades mediante CSS (@media)</a
+              >
+            </li>
+            <li>
+              <a
+                class="proyectos"
+                href="https://github.com/edwinmgallego/clase-practica-css/tree/nicky212016/nicky212016"
+                >Formulario de registro a la Universidad Autónoma de
+                Occidente</a
+              >
+            </li>
+            <li>
+              <a
+                class="proyectos"
+                href="https://github.com/nicky212016/javascript-2/blob/main/js/ejercicio.js">Identificador de números iguales y cuál es el mayor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
