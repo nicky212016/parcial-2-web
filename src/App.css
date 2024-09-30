@@ -1,42 +1,105 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+  background-color: #7dcee5;
+  padding: 1rem;
+}
+
+#img {
+  width: 20%; /* Ajustado para pantallas pequeñas */
+  padding-bottom: 2%;
+}
+
+/* Diseño para pantallas grandes */
+.container {
+  display: flex;
+  flex-wrap: nowrap; /* Mantiene columnas en línea horizontal */
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  width: 45%;
   padding: 2rem;
+}
+
+.divider {
+  border-left: 2px solid #000;
+  height: auto;
+  margin: 0 20px;
+}
+
+.containerSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hardSkills {
+  flex: 1;
+  padding: 1rem;
+  background: #38bce1; /* Color para Habilidades Duras */
+}
+
+.softSkills {
+  flex: 1;
+  padding: 1rem;
+  background: #afedff; /* Color para Habilidades Blandas */
+}
+
+#subtitle {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Coloca las columnas en forma vertical */
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 1rem;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .divider {
+    display: none; /* Esconde la línea divisora en pantallas pequeñas */
   }
-}
 
-.card {
-  padding: 2em;
-}
+  #img {
+    width: 40%; /* Ajusta el tamaño de la imagen */
+  }
 
-.read-the-docs {
-  color: #888;
+  .containerSkills {
+    flex-direction: column;
+  }
+
+  .proyectos{
+    text-decoration: none;
+  }
 }
